@@ -38,3 +38,11 @@ $('.owl-carousel').owlCarousel({
     autoWidth:true,
     items:3
 })
+
+
+/* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
