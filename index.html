@@ -31,7 +31,9 @@
 			<div class="row">
 				<div class="col-4 col-sm-3 col-md-3 col-lg-2">
 					<div class="brand-logo">
-						<img src="assets/img/logo.png">
+						<a href="#">
+							<img src="assets/img/logo.png">
+						</a>						
 					</div>
 				</div>
 				<div class="col-8 col-sm-9 col-md-9 col-lg-10" align="right">
@@ -46,6 +48,7 @@
 								</div>
 							</li>
 							<li>
+								<i class="fas fa-poll-h"></i>
 								<i class="fas fa-stream" onclick="openNav()"></i>
 							</li>
 						</ul>
@@ -57,11 +60,11 @@
 	<div id="myNav" class="overlay">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<div class="overlay-content">
-			<a href="#">About</a>
-			<a href="#">Service</a>
-			<a href="#">Portofolio</a>
-			<a href="#">Client</a>
-			<a href="#">Contact</a>
+			<a href="#">Home</a>
+			<a href="#about">About</a>
+			<a href="#service">Service</a>
+			<a href="#portofolio">Portofolio</a>
+			<a href="#footer">Contact</a>
 			<div class="sosmed2">
 				<ul>
 					<li>
@@ -91,7 +94,7 @@
 	<div id="home" class="home">
 		<div class="container" align="center">
 			<h1>
-				Halo I'M Dwiky Dias Laksmana, This is My Portofolio Website
+				<i class="fab fa-twitch"></i> Halo I'M Dwiky Dias Laksmana, This is My Portofolio Website
 			</h1>
 			<div class=" mt-5">
 				<a href="#portofolio" class="snip1562">See My Work</a >
@@ -101,17 +104,25 @@
 
 	<div id="about" class="about my-5">
 		<div class="container">
-			<h1 class="py-3" align="center"><u>ABO</u>UT ME</h1>
-			<div class="row">
+			<div align="center">
+				<div class="bg-title py-3">
+					<h1 class="text-bold white title" align="center">ABOUT ME</h1>
+				</div>
+			</div>
+			
+			
+			<div class="row mt-5">
 				<div class="col-12 col-sm-12 col-md-4 col-lg-4 pb-3">
-					<figure class="snip1376">
-						<img src="assets/img/profil.jpg"/>
+					<figure class="snip1336">
+						<img src="assets/img/kaset.jpg" alt="sample87" />
 						<figcaption>
-							<h2>Dwiky Dias Laksmana</h2>
-							<p>
+							<img src="assets/img/profil.jpg" alt="profile-sample4" class="profile" />
+							<h5>Dwiky Dias Laksmana<span>Frontend</span></h5>
+							<p align="justify">
 								Hi, I Dwiky Dias Laksmana. I am a graduate of IPB Bogor majoring in Information Management. now I work as a front-end developer, I also work freelance as a web design and front-end developer.
 							</p>
-							<div class="icons">
+							<div class="link-sosmed mt-3" align="center">
+
 								<a href=""><i class="fab fa-instagram"></i></a>
 								<a href="https://twitter.com/dwiky_diasL"><i class="fab fa-twitter-square"></i></a>
 								<a href="https://www.linkedin.com/in/dwikydiasl/"><i class="fab fa-linkedin"></i></a>
@@ -122,14 +133,9 @@
 						</figcaption>
 					</figure>
 				</div>
-				<div class="col-12 col-sm-12 col-md-6 col-lg-6">
-					<div class="row title-about">
-						<div class="col-2 col-sm-2 col-md-2">
-							<div class="line"></div>
-						</div>
-						<div class="col-10 col-sm-10 col-md-10">
-							<h5>Programing</h5>
-						</div>
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="title-about">
+						<h5 class="text-bold-600 blue">Programming</h5>
 					</div>
 					<div class="list-skill row">
 						<div class="col-6 col-sm-6 col-md-6 col-lg-4">
@@ -148,13 +154,8 @@
 						</div>
 					</div>	
 
-					<div class="row title-about mt-5">
-						<div class="col-2 col-sm-2 col-md-2">
-							<div class="line"></div>
-						</div>
-						<div class="col-10 col-sm-10 col-md-10">
-							<h5>Design</h5>
-						</div>
+					<div class="title-about mt-5">
+						<h5 class="text-bold-600 blue">Design</h5>
 					</div>	
 					<div class="list-skill row">
 						<div class="col-6 col-sm-6 col-md-6 col-lg-4">
@@ -170,13 +171,8 @@
 						</div>
 					</div>		
 
-					<div class="row title-about mt-5">
-						<div class="col-2 col-sm-2 col-md-2">
-							<div class="line"></div>
-						</div>
-						<div class="col-10 col-sm-10 col-md-10">
-							<h5>Microsoft Office</h5>
-						</div>
+					<div class="title-about mt-5">
+						<h5 class="text-bold-600 blue">Microsoft Office</h5>
 					</div>	
 					<div class="list-skill row">
 						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
@@ -188,15 +184,22 @@
 						</div>
 						<div class="col-6 col-sm-6 col-md-4 col-lg-4">						
 						</div>
-					</div>				
+					</div>	
+
+					
+
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="service" class="service mb-5">
+	<div id="service" class="service pt-4 mb-5">
 		<div class="container">
-			<h1 class="py-3" align="center"><u>SERV</u>ICE</h1>
+			<div align="center">
+				<div class="bg-title-service py-3">
+					<h1 class="text-bold black title" align="center">SERVICE</h1>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
 					<div class="box-service">
@@ -205,8 +208,8 @@
 								<h3>Front-end Developer</h3>
 							</figcaption>
 							<div class="body-konten  bg-color1">
-								<div class="pb-3" align="center">
-									<i class="fas fa-code"></i>
+								<div class="img-service pb-3" align="center">
+									<img src="assets/img/frontend.svg">
 								</div>
 								<p align="justify">
 									We love working on complex web applications and delivering easy to use, beautiful products. We can develop new products from the ground up, or adapt and customize existing applications.
@@ -223,8 +226,8 @@
 								<h3>Web Design</h3>
 							</figcaption>
 							<div class="body-konten  bg-color1">
-								<div class="pb-3" align="center">
-									<i class="fas fa-laptop-code"></i>
+								<div class="pb-3 img-service" align="center">
+									<img src="assets/img/website.svg">
 								</div>
 								<p align="justify">
 									Although web application development is our essence, we also enjoy creating simple to use, and good-looking apps for iOS and Android devices.
@@ -241,8 +244,8 @@
 								<h3>UI/UX Design</h3>
 							</figcaption>
 							<div class="body-konten  bg-color1">
-								<div class="pb-3" align="center">
-									<i class="fas fa-pencil-ruler"></i>
+								<div class="pb-3 img-service" align="center">
+									<img src="assets/img/ui.svg">
 								</div>
 								<p align="justify">
 									Relying on current UI and UX design principles, our award winning team creates beautiful application designs that are easy to use.
@@ -258,253 +261,141 @@
 
 	<div id="portofolio" class="about my-5">
 		<div class="container">
-			<h1 class="py-3" align="center"><u>PORT</u>OFOLIO</h1>
-			<ul class="nav  mb-3 justify-content-center" id="pills-tab" role="tablist">
-				<li class="nav-item">
-					<a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="pills-web-tab" data-toggle="pill" href="#pills-web" role="tab" aria-controls="pills-web" aria-selected="false">Website</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="pills-mobile-tab" data-toggle="pill" href="#pills-mobile" role="tab" aria-controls="pills-mobile" aria-selected="false">Mobile</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="pills-uiux-tab" data-toggle="pill" href="#pills-uiux" role="tab" aria-controls="pills-uiux" aria-selected="false">UI/UX</a>
-				</li>
-			</ul>
-			<div class="tab-content" id="pills-tabContent">
-				<div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-					<div class="row">
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek1.jpg" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek2.png" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek3.jpg" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">
-					<div class="row">
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek1.jpg" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek2.png" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek3.jpg" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="pills-mobile" role="tabpanel" aria-labelledby="pills-mobile-tab">
-					<div class="row">
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek1.jpg" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek2.png" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek3.jpg" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="pills-uiux" role="tabpanel" aria-labelledby="pills-uiux-tab">
-					<div class="row">
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek1.jpg" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek2.png" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="box-project">
-								<figure class="postcard">
-									<img src="assets/img/projek3.jpg" alt="sample110" />
-									<figcaption>
-										<h3>Experience Developer</h3>
-										<p>The only skills I have the patience to learn are those that have no real application in life.</p>
-									</figcaption>
-									<a href="#"></a>
-								</figure>
-							</div>
-						</div>
-					</div>
+			<div align="center">
+				<div class="bg-title py-3">
+					<h1 class="text-bold white title" align="center">PORTOFOLIO</h1>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div id="support" class="support">
-		<div class="container">
-			<h1 class="py-3" align="center"><u>SUP</u>PORT</h1>
+			<div class="row mt-4">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<figure class="snip1220">
+						<img src="assets/img/projek1.png" alt="sample87"/>
+						<figcaption>
+							<h3>Developer Aplication</h3>
+							<p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+							<a href="#" class="read-more">Read More</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<figure class="snip1220">
+						<img src="assets/img/projek7.png" alt="sample87"/>
+						<figcaption>
+							<h3>Website Weldon</h3>
+							<p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+							<a href="#" class="read-more">Read More</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<figure class="snip1220">
+						<img src="assets/img/projek3.png" alt="sample87"/>
+						<figcaption>
+							<h3>Gmail Redesign</h3>
+							<p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+							<a href="#" class="read-more">Read More</a>
+						</figcaption>
+					</figure>
+				</div>
 
-			<div class="owl-carousel owl-theme pt-3">
-				<div class="item">
-					<div class="box">
-						<img src="assets/img/google.png">
-					</div>					
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<figure class="snip1220">
+						<img src="assets/img/projek4.jpg" alt="sample87"/>
+						<figcaption>
+							<h3>Podcast Apps</h3>
+							<p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+							<a href="#" class="read-more">Read More</a>
+						</figcaption>
+					</figure>
 				</div>
-				<div class="item">
-					<div class="box">
-						<img src="assets/img/laravel.png">
-					</div>					
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<figure class="snip1220">
+						<img src="assets/img/projek5.jpg" alt="sample87"/>
+						<figcaption>
+							<h3>Teman Belajar</h3>
+							<p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+							<a href="#" class="read-more">Read More</a>
+						</figcaption>
+					</figure>
 				</div>
-				<div class="item">
-					<div class="box">
-						<img src="assets/img/dribbble.svg">
-					</div>					
-				</div>
-				<div class="item">
-					<div class="box">
-						<img src="assets/img/vue.png">
-					</div>					
-				</div>
-				<div class="item">
-					<div class="box">
-						<img src="assets/img/visual.png">
-					</div>					
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<figure class="snip1220">
+						<img src="assets/img/projek6.jpg" alt="sample87"/>
+						<figcaption>
+							<h3>Website Design</h3>
+							<p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+							<a href="#" class="read-more">Read More</a>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
+
+			<div class="btn-see-more mt-4" align="center">
+				<a class="" href="#">See More</a>
+			</div>
+
 		</div>
 	</div>
 
 	<div id="footer" class="bg-footer">
 		<div class="container">
 			<div class="row pb-4">
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 pb-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-6 pb-3">
 					<div class="logo-footer mb-3">
-						<h1><img src="assets/img/logo.png"> Example</h1>
+						<h5><i class="fas fa-code"></i> Dwiky Dias Laksmana</h5>						
 					</div>
-					<div class="sosmed">
-						<a href=""><i class="fab fa-instagram"></i></a>
-						<a href=""><i class="fab fa-twitter-square"></i></a>
-						<a href=""><i class="fab fa-github"></i></a>
-						<a href=""><i class="fab fa-linkedin"></i></a>
-						<a href=""><i class="fas fa-envelope"></i></a>
-					</div>
-				</div>
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 pb-3">
-					<div class="form-message">
-						<h5 class="pb-3"><u>Contact</u> Me</h5>
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-						<input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter Name">
-						<textarea class="form-control" id="" rows="5" placeholder="Your Message"></textarea>
-						<div class="btn1">
-							<button type="submit" class="btn">Send</button>
-						</div>
-
+					<div class="menu-footer">
+						<ul>
+							<li>
+								<a href="#">HOME </a> 
+							</li>
+							<li>
+								<a href="#about">ABOUT</a>
+							</li>
+							<li>
+								<a href="#service">SERVICE</a>
+							</li>
+							<li>
+								<a href="#portofolio">PORTOFOLIO</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 pb-3">
-					<h5 class="pb-3"><u>Add</u>ress</h5>
-					<p>
-						Jl. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-					</p>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-6 pb-3">
+					<h3 class="grey">
+						Got a project? Want more info?<br>
+						We would love to hear from you!
+					</h3>
+					<h5 class="mt-4">
+						<i class="fas fa-map-marker-alt"></i> Address
+					</h5>
+					<h5>
+						<i class="fas fa-envelope"></i> E-Mail : diaslaksmana@gmail.com
+					</h5>
+					<div class="sosmed mt-4" align="left">
+						<h5>Follow me</h5>
+						<ul>
+							<li>
+								<a href=""><i class="fab fa-instagram"></i></a>
+							</li>
+							<li>
+								<a href=""><i class="fab fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href=""><i class="fab fa-github"></i></a>
+							</li>
+							<li>
+								<a href=""><i class="fab fa-linkedin-in"></i></a>
+							</li>
+							<li>
+								<a href=""><i class="fab fa-behance"></i></a>
+							</li>
+							<li>
+								<a href=""><i class="fab fa-dribbble"></i></a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -515,12 +406,7 @@
 				<p>&copy 2019 Dwiky Dias Laksmana . All rights reserved </p>
 			</div>
 			<div class="col-12 col-6 col-sm-6 col-md-6 col-lg-6">
-				<div  class="footer-menu">
-					<ul>
-						<li><a href="">Blog</a></li>
-						<li><a href="">Carrier</a></li>
-					</ul>
-				</div>						
+				
 			</div>
 		</div>
 	</div>	
