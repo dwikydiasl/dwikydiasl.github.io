@@ -675,10 +675,35 @@ figure.snip1220.hover figcaption {
 	-webkit-transition-delay: 0.5s;
 	transition-delay: 0.5s;
 }
-
+/*--Info--*/
+#info{
+	bottom: 0;
+	margin-bottom: -7px;
+}
+.info-left{
+	background-image: url('../assets/img/contact.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+.info-right{
+	background-image: url('../assets/img/portofolio.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+.konten-info{
+	padding: 50px 70px;
+}
+.konten-info-left a:hover{
+	color: #fff;
+	text-decoration: none;
+}
 /*--Footer--*/
 #footer{
-	padding: 30px 0 0 0;
+	display: none;
 }
 .bg-footer{
 	background-color: #2D3739;
@@ -807,6 +832,9 @@ figure.snip1220.hover figcaption {
 	.footer-menu ul {
 		margin-left: -50px;
 	}
+	.konten-info{
+		padding: 0 20px;
+	}
 }
 @media (min-width: 321px) and (max-width: 576px) {
 	#home{
@@ -847,9 +875,17 @@ figure.snip1220.hover figcaption {
 	.footer-menu ul {
 		margin-left: -50px;
 	}
+	.info-left{
+		margin-bottom: -5px;
+	}
+	.konten-info{
+		padding: 20px 20px;
+	}
 }
 @media (min-width: 576px) and (max-width: 768px) {
-
+	.info-left{
+		margin-bottom: -5px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
