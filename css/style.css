@@ -21,9 +21,6 @@ html{
 #info {
     display: none;
 }
-#footer {
-    display: none;
-}
 #loading {
     display: block;
     position: absolute;

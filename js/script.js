@@ -1,6 +1,6 @@
 //loading page
 function onReady(callback) {
-  var intervalID = window.setInterval(checkReady, 500);
+  var intervalID = window.setInterval(checkReady, 2000);
   function checkReady() {
     if (document.getElementsByTagName('body')[0] !== undefined) {
       window.clearInterval(intervalID);
@@ -18,7 +18,6 @@ onReady(function () {
   show('service', true);
   show('portofolio', true);
   show('info', true);
-  show('footer', true);
   show('loading', false);
 });
 
