@@ -2,6 +2,41 @@
 html{
 	scroll-behavior: smooth;
 }
+/*--Loading --*/
+#home {
+    display: none;
+}
+#header {
+    display: none;
+}
+#about {
+    display: none;
+}
+#service {
+    display: none;
+}
+#portofolio {
+    display: none;
+}
+#info {
+    display: none;
+}
+#footer {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color:#F5F5F5;
+    background-image: url('../assets/img/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .front-page{
 	font-family: 'Roboto Slab', serif;
 }
