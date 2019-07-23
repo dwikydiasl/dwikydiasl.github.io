@@ -729,14 +729,14 @@ figure.snip1220.hover figcaption {
 	margin-bottom: -7px;
 }
 .info-left{
-	background-image: url('../assets/img/contact.png');
+	background-image: url('../assets/img/contact.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 }
 .info-right{
-	background-image: url('../assets/img/portofolio.png');
+	background-image: url('../assets/img/portofolio.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
