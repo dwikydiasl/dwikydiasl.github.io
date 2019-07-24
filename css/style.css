@@ -847,6 +847,10 @@ figure.snip1220.hover figcaption {
 	padding-top: 100px;
 	padding-bottom: 200px;
 }
+.fa-arrow-circle-left{
+	font-size: 24px;
+	color: #0f055f;
+}
 
 
 /*Responsive*/
