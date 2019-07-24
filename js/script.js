@@ -21,6 +21,7 @@ onReady(function () {
   show('loading', false);
 });
 
+
 //sidemenu
 
 function openNav() {
@@ -56,14 +57,6 @@ $(".hover").mouseleave(
   );
 
 
-// owl-carousel
-$('.owl-carousel').owlCarousel({
-  margin:10,
-  loop:true,
-  autoWidth:true,
-  items:3
-})
-
 
 /* Demo purposes only */
 $(".hover").mouseleave(
@@ -72,16 +65,5 @@ $(".hover").mouseleave(
   }
   );
 
-
-AOS.init({
-  offset: 200,
-  duration: 600,
-  easing: 'ease-in-sine',
-  delay: 100,
-});
-
-$(document).ready(function(){
-  $(".preloader").fadeOut();
-})
 
 
