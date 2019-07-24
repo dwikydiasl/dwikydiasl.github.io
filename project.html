@@ -25,6 +25,7 @@
 
 </head>
 <body class="front-page">
+	<div id="loading"></div>
 	
 
 	<div id="header" class="header">
@@ -49,42 +50,17 @@
 								</div>
 							</li>
 							<li>
+								<!--
 								<i class="fas fa-poll-h"></i>
 								<i class="fas fa-stream" onclick="openNav()"></i>
+								-->
+								<a href="index.html">
+									<i class="fas fa-arrow-circle-left"></i> 
+								</a>								
 							</li>
 						</ul>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div id="myNav" class="overlay">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<div class="overlay-content">
-			<a href="index.html/#">Home</a>
-			<a href="index.html/#about">About</a>
-			<a href="index.html/#service">Service</a>
-			<a href="index.html/#portofolio">Portofolio</a>
-			<a href="index.html/#info">Contact</a>
-			<a href="" data-toggle="modal" data-target="#exampleModal">Info</a>
-			<div class="sosmed2">
-				<ul>
-					<li>
-						<a href=""><i class="fab fa-instagram"></i></a>
-					</li>
-					<li>
-						<a href=""><i class="fab fa-twitter-square"></i></a>
-					</li>
-					<li>
-						<a href=""><i class="fab fa-github"></i></a>
-					</li>
-					<li>
-						<a href=""><i class="fab fa-linkedin"></i></a>
-					</li>
-					<li>
-						<a href=""><i class="fas fa-envelope"></i></a>
-					</li>
-				</ul>
 			</div>
 		</div>
 	</div>
@@ -237,68 +213,7 @@
 		</div>
 	</div>
 
-	<div id="footer" class="bg-footer">
-		<div class="container">
-			<div class="row pb-4">
-				<div class="col-12 col-sm-6 col-md-6 col-lg-6 pb-3">
-					<div class="logo-footer mb-3">
-						<h5><i class="fas fa-code"></i> Dwiky Dias Laksmana</h5>						
-					</div>
-					<div class="menu-footer">
-						<ul>
-							<li>
-								<a href="#">HOME </a> 
-							</li>
-							<li>
-								<a href="#about">ABOUT</a>
-							</li>
-							<li>
-								<a href="#service">SERVICE</a>
-							</li>
-							<li>
-								<a href="#portofolio">PORTOFOLIO</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 col-sm-6 col-md-6 col-lg-6 pb-3">
-					<h3 class="grey">
-						Got a project? Want more info?<br>
-						We would love to hear from you!
-					</h3>
-					<h5 class="mt-4">
-						<i class="fas fa-map-marker-alt"></i> Address
-					</h5>
-					<h5>
-						<i class="fas fa-envelope"></i> E-Mail : diaslaksmana@gmail.com
-					</h5>
-					<div class="sosmed mt-4" align="left">
-						<h5>Follow me</h5>
-						<ul>
-							<li>
-								<a href=""><i class="fab fa-instagram"></i></a>
-							</li>
-							<li>
-								<a href=""><i class="fab fa-twitter"></i></a>
-							</li>
-							<li>
-								<a href=""><i class="fab fa-github"></i></a>
-							</li>
-							<li>
-								<a href=""><i class="fab fa-linkedin-in"></i></a>
-							</li>
-							<li>
-								<a href=""><i class="fab fa-behance"></i></a>
-							</li>
-							<li>
-								<a href=""><i class="fab fa-dribbble"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<div class="container footer-bottom">
 		<div class="row ">
 			<div class="col-12 col-6 col-sm-6 col-md-6 col-lg-6">
@@ -319,7 +234,27 @@
 	<script src="assets/OwlCarousel/src/js/owl.carousel.js" data-cover></script>
 	<script src="assets/OwlCarousel/src/js/owl.support.js" data-cover></script>
 	<script src="assets/OwlCarousel/src/js/owl.autoplay.js" data-cover></script>
-
+	<script type="text/javascript">
+		//loading page
+		function onReady(callback) {
+			var intervalID = window.setInterval(checkReady, 2000);
+			function checkReady() {
+				if (document.getElementsByTagName('body')[0] !== undefined) {
+					window.clearInterval(intervalID);
+					callback.call(this);
+				}
+			}
+		}
+		function show(id, value) {
+			document.getElementById(id).style.display = value ? 'block' : 'none';
+		}
+		onReady(function () {
+			show('header', true);
+			show('info', true);
+			show('portofolio', true);
+			show('loading', false);
+		});
+	</script>
 	<script type="text/javascript" src="js/script.js"></script>
 
 
