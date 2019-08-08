@@ -38,7 +38,7 @@ html{
     background-position: center;
 }
 .front-page{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Slab', serif !important;
 }
 #header{
 	position: fixed;
@@ -338,6 +338,9 @@ html{
 .link-sosmed a{
 	margin: 0 5px;
 	font-size: 24px;
+}
+.link-sosmed a:hover{
+	text-decoration: none;
 }
 .list-skill li{
 	list-style: none;
