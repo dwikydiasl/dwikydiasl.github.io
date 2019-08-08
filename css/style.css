@@ -138,9 +138,9 @@ html{
 
 .overlay .closebtn {
 	position: absolute;
-	top: 5px;
-	right: 35px;
-	font-size: 40px;
+	top: 0;
+	right: 55px;
+	font-size: 60px;
 }
 #wrap {
 	margin: 0 5px;
@@ -726,6 +726,11 @@ figure.snip1220.hover figcaption {
 	-webkit-transition-delay: 0.5s;
 	transition-delay: 0.5s;
 }
+.portofolio-box{
+
+}
+
+
 /*--Info--*/
 #info{
 	bottom: 0;
