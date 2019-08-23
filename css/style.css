@@ -4,42 +4,67 @@ html{
 }
 /*--Loading --*/
 #home {
-    display: none;
+	display: none;
 }
 #header {
-    display: none;
+	display: none;
 }
 #about {
-    display: none;
+	display: none;
 }
 #service {
-    display: none;
+	display: none;
 }
 #portofolio {
-    display: none;
+	display: none;
 }
 #blog {
-    display: none;
+	display: none;
 }
 #info {
-    display: none;
+	display: none;
 }
 #loading {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
-    background-color:#F5F5F5;
-    background-image: url('../assets/img/loading.gif');
-    background-repeat: no-repeat;
-    background-position: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	background-color:#F5F5F5;
+	background-image: url('../assets/img/loading.gif');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .front-page{
 	font-family: 'Roboto Slab', serif !important;
 }
+/*---- Humberger ----*/
+#svg-container-div {
+	width: 60%;
+	height: 60%;
+	z-index: 100;
+	padding-right: 35px;
+	margin-top: -7px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+#menu-icon-svg {
+	width: 100%; 
+	height: 100%;
+	stroke: #222222;
+	z-index: 100;
+	fill: none;
+	stroke-width: 14;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	cursor: pointer;
+}
+
+
+/*------------------*/
 #header{
 	position: fixed;
 	width: 100%;
@@ -48,13 +73,15 @@ html{
 }
 .scrolled{
 	padding-top: -30;
-	height: 65px;
+	height: 75px;
 	background-color: #fff;
-	transition: 0.3s;
+	transition: 0.2s;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .brand-logo img{
 	width: 30%;
+	position: absolute;
+	z-index: 100;
 }
 .menu-header ul li{
 	display: inline-block;
@@ -94,16 +121,16 @@ html{
 #vertikal-text span{
 }
 .overlay {
-	height: 100%;
-	width: 0;
+	width: 100%;
 	position: fixed;
-	z-index: 100;
-	top: 0;
+	z-index: 99;
+	top: 70px;
 	right: 0;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0, 0.98);
-	overflow-x: hidden;
-	transition: 0.5s;
+	border-radius: 0 0 51% 51%;
+	/*background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);*/
+	background-color: #fff;
+	transition: 1s;
 }
 .sosmed2 ul{
 	margin-left: -35px;
@@ -113,7 +140,8 @@ html{
 }
 .overlay-content {
 	position: relative;
-	top: 8%;
+	top: 5%;
+	z-index: 99;
 	width: 100%;
 	text-align: center;
 	margin-top: 30px;
@@ -143,7 +171,7 @@ html{
 	font-size: 60px;
 }
 #wrap {
-	margin: 0 5px;
+	margin: 0 50px;
 	display: inline-block;
 	position: relative;
 	height: 30px;

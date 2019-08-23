@@ -33,14 +33,14 @@
 	<div id="header" class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-4 col-sm-3 col-md-3 col-lg-2">
+				<div class="col-3 col-sm-3 col-md-3 col-lg-2">
 					<div class="brand-logo">
 						<a href="#">
 							<img src="assets/img/logo.png">
 						</a>						
 					</div>
 				</div>
-				<div class="col-8 col-sm-9 col-md-9 col-lg-10" align="right">
+				<div class="col-9 col-sm-9 col-md-9 col-lg-10" align="right">
 					<div class="menu-header">
 						<ul>
 							<li>
@@ -52,8 +52,13 @@
 								</div>
 							</li>
 							<li>
-								<i class="fas fa-poll-h"></i>
-								<i class="fas fa-stream" onclick="openNav()"></i>
+								<div id="svg-container-div" data-toggle="collapse"  href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+									<svg id="menu-icon-svg" viewBox="0 0 100 100">
+										<polyline id="top-line" points="7 20 50 20 93 20 "></polyline>
+										<path id="middle-line" 	d="M7,50 L93,50 Z"></path>
+										<path id="bottom-line" 	d="M7,80 L93,80 Z"></path>
+									</svg>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -61,8 +66,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="myNav" class="overlay">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="overlay collapse" id="collapseExample">
 		<div class="overlay-content">
 			<a href="#">Home</a>
 			<a href="#about">About</a>
@@ -92,6 +96,37 @@
 			</div>
 		</div>
 	</div>
+	<!-- <div id="myNav" class="overlay collapse" id="collapseExample">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="#">Home</a>
+			<a href="#about">About</a>
+			<a href="#service">Service</a>
+			<a href="#portofolio">Portofolio</a>
+			<a href="#info">Contact</a>
+			<a href="#">Blog</a>
+			<a href="" data-toggle="modal" data-target="#exampleModal">Info</a>
+			<div class="sosmed2">
+				<ul>
+					<li>
+						<a href=""><i class="fab fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fab fa-twitter-square"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fab fa-github"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fab fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fas fa-envelope"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div> -->
 
 	<div id="vertikal-text">
 		<h5>Front-end Developer <span><i class="fas fa-code-branch"></i></span></h5>
@@ -461,6 +496,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
+
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script type="text/javascript">		
@@ -471,8 +508,9 @@
 			delay: 100,
 		});
 	</script>
+
 	<script type="text/javascript" src="js/script.js"></script>
-	
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/409445/animateAnything.js"></script>
 
 </body>
 </html>
