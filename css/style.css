@@ -102,7 +102,7 @@ html{
 	overflow: hidden;
 }
 .overlay_menu.open {
-	opacity: .9;
+	opacity: 0.95;
 	visibility: visible;
 	height: 100%;
 }
