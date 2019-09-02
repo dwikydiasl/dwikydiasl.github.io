@@ -665,6 +665,7 @@ html{
 .btn-see-more a{
 	background-color: #0F055F;
 	color: #fff;
+	border-radius: 0px 20px 0 20px;
 	padding: 10px 20px;
 	box-shadow: 5px 5px 4px rgba(15, 5, 95, 0.25);
 }
@@ -824,17 +825,17 @@ figure.snip1220.hover figcaption {
 .sosmed ul li{	
 	display: inline-block;
 	list-style: none;
-	height: 30px;
+	height: 25px;
 	margin-right: 10px;
-	padding-top: 2px;
+	padding-top: -10px;
 	text-align: center;
-	width: 30px;
+	width: 25px;
 	border-radius: 100px;
 	background-color: #bdbdbd;
 }
 .sosmed a{
 	text-align: center;
-	font-size: 18px;
+	font-size: 14px;
 	color: #fff;
 }
 #footer h5{
