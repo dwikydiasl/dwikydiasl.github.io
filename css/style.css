@@ -45,8 +45,8 @@ html{
 	position: fixed;
 	top: 20px;
 	right: 70px;
-	height: 27px;
-	width: 35px;
+	height: 25px;
+	width: 27px;
 	cursor: pointer;
 	z-index: 100;
 	transition: opacity .25s ease;
