@@ -893,8 +893,21 @@ figure.snip1220.hover figcaption {
 	-webkit-transition-delay: 0.5s;
 	transition-delay: 0.5s;
 }
-.portofolio-box{
-
+.filter-category {
+	text-align: center;
+}
+.filter-category li {
+	text-align: center;
+}
+.filter-category li a{
+	color: #111;
+}
+.filter-category li a.active{
+	color: #fff;
+	font-weight: 600;
+	background-color: #0F055F;
+	border-radius: 0px 30px 0px 30px;
+	/*border-bottom: 5px solid #0F055F;*/
 }
 
 
