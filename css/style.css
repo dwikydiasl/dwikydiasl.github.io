@@ -32,8 +32,8 @@ html{
 	z-index: 100;
 	width: 100vw;
 	height: 100vh;
-	background-color:#F5F5F5;
-	background-image: url('../assets/img/loading3.gif');
+	background-color:#fff;
+	background-image: url('../assets/img/loading5.gif');
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -237,9 +237,9 @@ html{
 #vertikal-text h5{
 	position: fixed;
 	right: 0;
+	margin-right: 0;
 	top: 35%;
 	z-index: 99;
-	margin-right: 0;
 	background-color: #f04566;
 	height: 250px;
 	width: 30px;
@@ -1022,6 +1022,81 @@ figure.snip1220.hover figcaption {
 .fa-arrow-circle-left{
 	font-size: 24px;
 	color: #0f055f;
+}
+
+/*------ chat --------*/
+.icon-chat {
+	font-size: 22px;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.fa-times-circle{
+	cursor: pointer;
+	font-size: 22px;
+}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }
 
 
