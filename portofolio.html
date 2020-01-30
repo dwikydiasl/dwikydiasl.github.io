@@ -14,7 +14,7 @@
 
 
 	<!--Fontstyle-->
-	<link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=McLaren:300|400|500|600|700&display=swap" rel="stylesheet">
 
 	<!-- Fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -29,268 +29,306 @@
 </head>
 <body class="front-page" >
 	<!-- <div id="loading"></div> -->
-	<div id="back"></div>
-	<div id="front"></div>
+	<!-- <div id="back"></div>
+	<div id="front"></div> -->
 
-	<div id="header" class="header">		
-		<div id="cursor"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-3 col-sm-3 col-md-3 col-lg-2">
-					<div class="brand-logo">
-						<a href="index.html">
-							<img src="assets/img/icon/logo.png">
-						</a>			
+	<div id="header" class="header">
+			<nav>
+				<div id="cursor"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-3 col-sm-3 col-md-3 col-lg-2">
+							<div class="brand-logo">
+								<a href="#">
+									<img src="assets/img/icon/logo.png">
+								</a>			
+							</div>
+						</div>
+						<div class="col-9 col-sm-9 col-md-9 col-lg-10" align="right">
+							<div class="menu-header">
+								<ul>
+									<li class="">
+										<a href="index.html" class="button-get">
+											Back to home <i class="fas fa-arrow-right"></i> 
+										</a>
+									</li>
+									<li class="show-mobile-menu">
+										<div class="button_container" id="toggle">
+											<span class="top"></span>
+											<span class="middle"></span>
+											<span class="bottom"></span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-9 col-sm-9 col-md-9 col-lg-10" align="right">
-					<div class="menu-header">
-						<ul>
-							<li class="hide-mobile-menu line-hover">
-								<a href="about.html" class="about-active">About Me</a>
-							</li>
-							<li class="hide-mobile-menu line-hover">
-								<a href="service.html" class="service-active">Service</a>
-							</li>
-							<li class="hide-mobile-menu line-hover">
-								<a href="portofolio.html" class="portofolio-active">Portofolio</a>
-							</li>
-							<li class="hide-mobile-menu">
-								<a href="contact.html" class="button-get">
-									<i class="fas fa-arrow-right"></i> GET IN TOUCH
-								</a>
-							</li>
-							<li class="show-mobile-menu">
-								<div class="button_container" id="toggle">
-									<span class="top"></span>
-									<span class="middle"></span>
-									<span class="bottom"></span>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			</nav>
 		</div>
-	</div>
 
-	<div class="page-home">
 		<div class="overlay_menu" id="overlay_menu">
 			<nav class="overlay-menu">
 				<ul>
-					<li><a href="#about" >About</a></li>
-					<li><a href="#service" >Service</a></li>
-					<li><a href="#portofolio" >Portofolio</a></li>
 					<li>
-						<a href="contact.html" class="button-get">
-							<i class="fas fa-arrow-right"></i> GET IN TOUCH
+						<a href="#contact" class="button-get">
+							<i class="fas fa-arrow-right"></i> Back to home
 						</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 
-
-		<div id="page_content" class="page_content">
-			<div class="container">
-				
-				<ul class="nav justify-content-center menu-portofolio mb-3" id="pills-tab" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
-							 Frontend
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
-							 Web Design
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
-							 UI Design
-						</a>
-					</li>
-				</ul>
-				<div class="tab-content mt-5" id="pills-tabContent">
-					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-						<div>
-							<div class="row">
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="http://dev.kadangkoding.com/capital/id">
-											<div class="imgBx">
-												<img src="assets/img/capital.png" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>Capital<br>
-												<span>PERUSAHAAN KEUANGAN TERINTEGRASI YANG SOLID DAN TERPERCAYA </span>
-											</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="https://weldon.co.id/">
-											<div class="imgBx">
-												<img src="assets/img/projek7.png" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>Website Weldon<br>
-											</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="http://darmalaw.id/">
-											<div class="imgBx">
-												<img src="assets/img/darmawan.png" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>Darmawan & Partners<br>
-												<span>Darmawan & Partners comes to give you alternative option to get SOLUTION for your legal issues.</span>
-											</h2>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="https://teman-belajar.com/">
-											<div class="imgBx">
-												<img src="assets/img/projek5.jpg" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>Teman Belajar<br>
-												<span>Teman Belajar adalah platform pencarian guru les privat terbesar di Surakarta ...</span>
-											</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="https://teman-belajar.com/">
-											<div class="imgBx">
-												<img src="assets/img/pickpict.png" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>PICKPICT.ID<br>
-												<span></span>
-											</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="https://q7survey.com/">
-											<div class="imgBx">
-												<img src="assets/img/Q7.jpg" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>Q7 Survey<br>
-												<span>Q7 Survey membantu Anda lebih mudah untuk membuat survey, sehingga Anda bisa mendapatkan ...</span>
-											</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="">
-											<div class="imgBx">
-												<img src="assets/img/Chapter1.jpg" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>Chapter1<br>
-												<span></span>
-											</h2>
-										</div>
-									</div>
+	<div class="page-portofolio">
+		
+		<div class="container">
+			<ul class="nav justify-content-center  mb-5" id="pills-tab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Frontend</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Web Design</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">UI Design</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+					<div>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/projek5.jpg" alt="sample68" />
+										<figcaption>
+											<h2>Teman Belajar</h2>
+											<p>
+												Teman Belajar adalah platform pencarian guru les privat terbesar di Surakarta, Jogja, dan Semarang yang dapat membantumu dalam mencari dan berlangganan guru les privat. Berlangganan dengan Teman Belajar sekarang.
+											</p>
+										</figcaption>
+										<a href="https://teman-belajar.com/"></a>
+									</figure>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-						<!-- web design -->
 
-						<div>
-							<div class="row">
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="">
-											<div class="imgBx">
-												<img src="assets/img/projek1.png" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>Web Design<br>
-												<span></span>
-											</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="">
-											<div class="imgBx">
-												<img src="assets/img/projek6.jpg" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>Web Design<br>
-												<span></span>
-											</h2>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="">
-											<div class="imgBx">
-												<img src="assets/img/projek2.png" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>Web Design<br>
-												<span></span>
-											</h2>
-										</div>
-									</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/projek7.png" alt="sample68" />
+										<figcaption>
+											<h2>Weldon</h2>
+											<p>
+												PT. Citra Warna Abadi ( CWA ) berdiri tahun 2010 yang merupakan perusahaan nasional yang bergerak dibidang produksi cat tembok dan bahan pelapis dengan produk unggulan cat dekoratif.
+											</p>
+										</figcaption>
+										<a href="https://www.weldon.co.id/"></a>
+									</figure>
 								</div>
 							</div>
-						</div>
 
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/capital.png" alt="sample68" />
+										<figcaption>
+											<h2>Capital</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat.
+											</p>
+										</figcaption>
+										<a href="http://dev.kadangkoding.com/capital/en"></a>
+									</figure>
+								</div>
+							</div>
+
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/darmawan.png" alt="sample68" />
+										<figcaption>
+											<h2>Darmawan</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat.
+											</p>
+										</figcaption>
+										<a href="https://www.darmalaw.id/"></a>
+									</figure>
+								</div>
+							</div>
+
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/Chapter1.jpg" alt="sample68" />
+										<figcaption>
+											<h2>Chapter1</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat.
+											</p>
+										</figcaption>
+										<a href="https://www.darmalaw.id/"></a>
+									</figure>
+								</div>
+							</div>
+
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/Q7.jpg" alt="sample68" />
+										<figcaption>
+											<h2>Q7</h2>
+											<p>
+												Q7 Survey membantu Anda lebih mudah untuk membuat survey, sehingga Anda bisa mendapatkan hasil yang lebih maksimal.
+											</p>
+										</figcaption>
+										<a href="http://q7survey.com/"></a>
+									</figure>
+								</div>
+							</div>
+
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/restodepo.jpg" alt="sample68" />
+										<figcaption>
+											<h2>Restodepo</h2>
+											<p>
+												Marketplace B2B untuk kebutuhan restoran/dapur
+											</p>
+										</figcaption>
+										<a href="http://dev2.restodepo.co.id/"></a>
+									</figure>
+								</div>
+							</div>
+
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/pickpict.png" alt="sample68" />
+										<figcaption>
+											<h2>Pickpict</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea co
+											</p>
+										</figcaption>
+										<a href="http://q7survey.com/"></a>
+									</figure>
+								</div>
+							</div>
+
+						</div>
 					</div>
-					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-						<!-- UI Design -->
-						<div>
-							<div class="row">
-								<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-									<div class="card img-hero-fade">
-										<a href="">
-											<div class="imgBx">
-												<img src="assets/img/projek4.jpg" alt="images">
-											</div>
-										</a>
-										<div class="details">
-											<h2>Podcast Apps<br>
-												<span></span>
-											</h2>
-										</div>
-									</div>
+				</div>
+				<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+					<div>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/projek1.png" alt="sample68" />
+										<figcaption>
+											<h2>Sample 1</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											</p>
+										</figcaption>
+										<a href=""></a>
+									</figure>
+								</div>
+							</div>
+
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/projek2.png" alt="sample68" />
+										<figcaption>
+											<h2>Sample 1</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											</p>
+										</figcaption>
+										<a href=""></a>
+									</figure>
+								</div>
+							</div>
+
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/projek1.jpg" alt="sample68" />
+										<figcaption>
+											<h2>Sample 3</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											</p>
+										</figcaption>
+										<a href=""></a>
+									</figure>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+					<div>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/projek4.jpg" alt="sample68" />
+										<figcaption>
+											<h2>Sample 1</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											</p>
+										</figcaption>
+										<a href=""></a>
+									</figure>
+								</div>
+							</div>
 
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="all-proect-list" data-aos="fade-up">
+									<figure class="snip1449">
+										<img src="assets/img/projek3.png" alt="sample68" />
+										<figcaption>
+											<h2>Sample 1</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											</p>
+										</figcaption>
+										<a href=""></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		
 
 	</div>
 
