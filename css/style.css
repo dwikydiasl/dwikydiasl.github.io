@@ -694,7 +694,10 @@ body{
 	font-size: 18px;
 	margin-right: 10px;
 }
-
+.timeline>li:hover{
+	background-color: #f5f5f5;
+	color: #4758FB !important;
+}
 /*--Title BG--*/
 .bg-title{
 	background-image: url('../assets/img/brush.png');
