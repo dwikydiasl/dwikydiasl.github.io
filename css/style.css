@@ -419,7 +419,6 @@ body{
 	position: absolute;
 	top: 5%;
 	z-index: 99;
-	width: 100%;
 	text-align: center;
 	margin-top: 30px;
 }
@@ -797,7 +796,7 @@ body{
 #service{
 	height: 100%;
 	background-color: #fff;
-	padding: 80px 0;
+	padding: 70px 0;
 }
 .title-section{
 	text-align: center;
@@ -890,7 +889,7 @@ body{
 /*--portofolio--*/
 #portofolio{
 	height: 100%;
-	padding: 100px  0 50px 0;
+	padding: 90px  0 50px 0;
 }
 .title-project h1{
 	line-height: 85px;
