@@ -919,8 +919,11 @@ body{
 	color: #fff;
 }
 .see-project:hover{
-	color: #fff;
+	color: #94A0C6;
 	text-decoration: none;
+}
+.see-project:hover .line{
+	background-color: #94A0C6 ;
 }
 .see-project h5{
 	margin: 0 10px;
