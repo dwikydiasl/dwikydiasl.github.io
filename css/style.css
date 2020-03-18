@@ -18,7 +18,6 @@ html{
 body{
 	/*font-family: 'McLaren', cursive !important;*/
 	font-family: 'Montserrat', sans-serif !important;
-	
 	background-color: #252525 !important;
 	/*background-color: #1d2c38 !important;*/
 	/*cursor: none !important;*/
@@ -70,6 +69,7 @@ body{
 #back {
 	background: url(http://www.tranexnet.com/img/back.png) repeat 20% 20%;
 	position: fixed;
+	height: 100vh;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -97,6 +97,7 @@ body{
 #front {
 	background: url(http://www.tranexnet.com/img/front.png) repeat 35% 35%;
 	position: fixed;
+	height: 100vh;
 	top: 0;
 	left: 0;
 	right: 0;
