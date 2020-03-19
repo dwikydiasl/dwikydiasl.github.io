@@ -69,7 +69,6 @@ body{
 #back {
 	background: url(http://www.tranexnet.com/img/back.png) repeat 20% 20%;
 	position: fixed;
-	height: 100vh;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -97,7 +96,6 @@ body{
 #front {
 	background: url(http://www.tranexnet.com/img/front.png) repeat 35% 35%;
 	position: fixed;
-	height: 100vh;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -339,14 +337,16 @@ body{
 	color: #fff;
 	font-weight: bold;
 }
-.line-hover a::after{
+/*.line-hover a::after{
 	content: '';
 	display: block;
 	width: 0;
-	height: 3px;
+	height: 2px;
+	margin-top: -13px;
 	background: #4758FB;
 	transition: width .5s;
-}
+	text-decoration: line-through;
+}*/
 .line-hover a:hover::after {
 	width: 100%;
 }
@@ -355,7 +355,9 @@ body{
 	font-weight: 400;
 }
 .menu-header ul li a:hover{
-	text-decoration: none;
+	text-decoration: line-through;
+	transition: width .5s;
+	height: 3px;
 }
 .fa-search{
 	font-size: 24px;
