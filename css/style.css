@@ -1192,8 +1192,9 @@ body{
 
 .snip1449 img {
 	width: 100%;
-	max-height: 250px;
+	height: 250px;
 	vertical-align: top;
+	object-position: center;
 	-webkit-transition: all 0.8s ease-out;
 	transition: all 0.8s ease-out;
 }
