@@ -323,14 +323,22 @@ body{
 .name_logo{
 	color: #fff;
 	font-size: 32px;
-	margin-left: 50px;
+	margin-left: 55px;
 	font-weight: 500;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+.brand-logo a:hover{
+	text-decoration: none !important;
 }
 .scrolled .name_logo{
 	display: none;
 }
-.brand-logo img{
+.scrolled .brand-logo img{
 	max-width: 45px;
+}
+.brand-logo img{
+	max-width: 50px;
 	position: absolute;
 	z-index: 100;
 }
