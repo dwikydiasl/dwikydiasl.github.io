@@ -354,69 +354,59 @@ body{
 	color: #fff;
 	font-weight: bold;
 }
-/*.line-hover a::after{
-	content: '';
-	display: block;
-	width: 0;
-	height: 2px;
-	margin-top: -13px;
-	background: #4758FB;
-	transition: width .5s;
-	text-decoration: line-through;
-	}*/
-	.line-hover a:hover::after {
-		width: 100%;
-	}
-	.menu-header ul li a{
-		color: #fff;
-		font-weight: 400;
-	}
-	.menu-header ul li a:hover{
-		text-decoration: line-through;
-		transition: width .5s;
-		height: 3px;
-	}
-	.fa-search{
-		font-size: 24px;
-		padding-top: 10px;
-		color: #fff;
-	}
-	.fa-stream{
-		font-size: 24px;
-		cursor: pointer;
-		background-color: #0F055F;
-		color: #fff;
-		padding: 7px;
-		border-radius: 5px;
-	}
-	#vertikal-text h5{
-		position: fixed;
-		right: 0;
-		margin-right: 0;
-		top: 30%;
-		z-index: 99;
-		background-color: #f04566;
-		height: 270px;
-		width: 35px;
-		color: #fff;
-		padding: 15px 5px;
-		writing-mode:tb-rl;
-		-webkit-transform:rotate(-90deg);
-		-moz-transform:rotate(-90deg);
-		-o-transform: rotate(-90deg);
-		-ms-transform:rotate(-90deg);
-		transform: rotate(180deg);
-		white-space:nowrap;
-	}
-	#vertikal-text span{
-	}
-	.overlay {
-		width: 100%;
-		position: fixed;
-		z-index: 99;
-		top: 70px;
-		right: 0;
-		border-radius: 0 0 51% 51%;
+
+.line-hover a:hover::after {
+	width: 100%;
+}
+.menu-header ul li a{
+	color: #fff;
+	font-weight: 400;
+}
+.menu-header ul li a:hover{
+	text-decoration: none;
+	font-weight: bold;
+}
+.fa-search{
+	font-size: 24px;
+	padding-top: 10px;
+	color: #fff;
+}
+.fa-stream{
+	font-size: 24px;
+	cursor: pointer;
+	background-color: #0F055F;
+	color: #fff;
+	padding: 7px;
+	border-radius: 5px;
+}
+#vertikal-text h5{
+	position: fixed;
+	right: 0;
+	margin-right: 0;
+	top: 30%;
+	z-index: 99;
+	background-color: #f04566;
+	height: 270px;
+	width: 35px;
+	color: #fff;
+	padding: 15px 5px;
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform: rotate(180deg);
+	white-space:nowrap;
+}
+#vertikal-text span{
+}
+.overlay {
+	width: 100%;
+	position: fixed;
+	z-index: 99;
+	top: 70px;
+	right: 0;
+	border-radius: 0 0 51% 51%;
 	/*background-color: rgb(0,0,0);
 	background-color: rgba(0,0,0, 0.9);*/
 	background-color: #fff;
@@ -426,6 +416,7 @@ body{
 	background-color: #4758FB;
 	padding: 10px 25px;
 	border-radius: 30px;
+	font-weight: bold !important;
 }
 .button-get:hover{
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -1730,5 +1721,9 @@ body{
 
 }
 @media (min-width: 999px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 1800px) {
 
 }
