@@ -1130,7 +1130,7 @@ body{
 }
 .all-proect-list{
 	margin-bottom: 25px;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+	
 	border-radius: 5px;
 }
 .snip1449 {
@@ -1144,6 +1144,7 @@ body{
 	line-height: 1.4em;
 	transform: translateZ(0);
 	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .snip1449 * {
