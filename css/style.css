@@ -838,6 +838,7 @@ body{
 	background-color: transparent;
 	box-shadow: none !important;
 	padding: 30px 40px 0 0;
+
 }
 
 .snip1556 *,
@@ -857,6 +858,7 @@ body{
 	vertical-align: top;
 	object-position: center;  
 	height: 350px;
+	border-radius: 0 30px;
 }
 
 .snip1556 figcaption {
