@@ -16,7 +16,8 @@ html{
 	background: #111111;
 }
 body{
-	font-family: 'Montserrat', sans-serif !important;
+	/*font-family: 'Montserrat', sans-serif !important;*/
+	font-family: 'Quicksand', sans-serif !important;
 	background-color: #111 !important;
 }
 @-webkit-keyframes backgroundAnimate {
@@ -321,7 +322,7 @@ body{
 	color: #fff;
 	font-size: 32px;
 	margin-left: 55px;
-	font-weight: 500;
+	font-weight: 700;
 	border-top: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 }
@@ -330,6 +331,12 @@ body{
 }
 .scrolled .name_logo{
 	display: none;
+	transition: 0.4s;
+	-webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+     opacity: 1;
 }
 .scrolled .brand-logo img{
 	max-width: 45px;
@@ -908,7 +915,7 @@ body{
 }
 .title-project h1{
 	line-height: 85px;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 102px;
 	color: #111;
 }
@@ -973,7 +980,7 @@ body{
 .get-in{
 	font-size: 52px;
 	color: #fff;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: left;
 }
 .sub-get-in{
@@ -1019,7 +1026,7 @@ body{
 	font-weight: 400;
 }
 .text-footer span{
-	font-weight: 600;
+	font-weight: 700;
 }
 .footer2{
 	position: relative;
@@ -1198,7 +1205,7 @@ body{
 }
 
 .snip1449 h2 {
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 28px;
 }
 
