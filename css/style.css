@@ -561,22 +561,10 @@ body{
 .menu-header ul li a{
 	color: #fff;
 	font-weight: 400;
+	font-size: 20px;
 }
 .menu-header ul li a:hover{
 	text-decoration: none;
-}
-.fa-search{
-	font-size: 24px;
-	padding-top: 10px;
-	color: #fff;
-}
-.fa-stream{
-	font-size: 24px;
-	cursor: pointer;
-	background-color: #0F055F;
-	color: #fff;
-	padding: 7px;
-	border-radius: 5px;
 }
 #vertikal-text h5{
 	position: fixed;
@@ -618,7 +606,7 @@ body{
 	transition: 1s;
 }
 .button-get {
-	padding: 10px 25px;
+	padding: 7px 25px;
 	border-radius: 30px;
 	font-weight: bold !important;
 background: rgb(0,78,169);
