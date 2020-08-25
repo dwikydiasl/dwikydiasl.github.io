@@ -585,7 +585,7 @@ body{
 	top: 30%;
 	z-index: 99;
 	background-color: #f04566;
-	height: 270px;
+	height: 250px;
 	width: 35px;
 	color: #fff;
 	padding: 15px 5px;
@@ -596,6 +596,14 @@ body{
 	-ms-transform:rotate(-90deg);
 	transform: rotate(180deg);
 	white-space:nowrap;
+}
+#vertikal-text i{
+	margin-left: 15px;
+	webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform:rotate(45deg);
+	transform: rotate(90deg);
 }
 .overlay {
 	width: 100%;
@@ -610,10 +618,14 @@ body{
 	transition: 1s;
 }
 .button-get {
-	background-color: #004ea9;
 	padding: 10px 25px;
 	border-radius: 30px;
 	font-weight: bold !important;
+background: rgb(0,78,169);
+background: -moz-linear-gradient(90deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 80%);
+background: -webkit-linear-gradient(90deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 80%);
+background: linear-gradient(90deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 80%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004ea9",endColorstr="#00a3e8",GradientType=1);
 }
 .button-get:hover{
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
