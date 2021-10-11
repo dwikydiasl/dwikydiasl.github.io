@@ -16,6 +16,7 @@ html{
 body{
 	font-family: 'Quicksand', sans-serif !important;
 	background-color: #111 !important;
+	overflow-x: hidden;
 }
 @-webkit-keyframes backgroundAnimate {
 	from {
@@ -132,6 +133,8 @@ body{
 	justify-content: center;
 	align-items: center;
 	position: fixed;
+	overflow-y: hidden;
+	z-index: 1;
 }
 .loading_page .box {
 	width: 400px;
@@ -663,7 +666,7 @@ body{
 	bottom: 0;
 	margin-bottom: 0;
 	right: 100px;
-	z-index: 0;
+	z-index: 1;
 }
 @keyframes fade-in {
 	from {opacity: 0; transform: scale(.7,.7)}
@@ -1513,6 +1516,33 @@ a .icon-arrow {
 .btn-all-project a:active .icon-arrow {
 	fill: #FD6154;
 }
+
+
+.line {
+  background: rgba(0,0,0,.2);
+  margin: 1em;
+  position: absolute;
+  animation: line 1s linear infinite;
+  transform-origin: 0 50%;
+  opacity: 0;
+  border-radius: 1em;
+  z-index: 0;
+}
+@keyframes line {
+  from {
+    opacity: 0;
+    transform: translateX(0) scaleX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%) scaleX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(50%) scaleX(1);
+  }
+}
+
 
 /*========= Responsive ==========*/
 @media (min-width: 120px) and (max-width: 320px) {
