@@ -131,6 +131,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: fixed;
 }
 .loading_page .box {
 	width: 400px;
@@ -481,7 +482,7 @@ body{
 #header{
 	position: fixed;
 	width: 100%;
-	z-index: 100;
+	z-index: 1000;
 }
 .header{
 	padding-top: 30px;
@@ -595,11 +596,11 @@ body{
 	padding: 7px 25px;
 	border-radius: 30px;
 	font-weight: bold !important;
-background: rgb(0,78,169);
-background: -moz-linear-gradient(90deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 80%);
-background: -webkit-linear-gradient(90deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 80%);
-background: linear-gradient(90deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 80%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004ea9",endColorstr="#00a3e8",GradientType=1);
+	background: rgb(0,78,169);
+	background: -moz-linear-gradient(90deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 80%);
+	background: -webkit-linear-gradient(90deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 80%);
+	background: linear-gradient(90deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004ea9",endColorstr="#00a3e8",GradientType=1);
 }
 .button-get:hover{
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -653,15 +654,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004ea9",endCo
 	background-repeat: no-repeat;
 	background-size: cover;*/
 }
-.my-title{
+.subtitle-header{
 	display: none;
 }
 .img-hero img{
-	max-width: 430px;
+	max-width: 35%;
 	position: absolute;
 	bottom: 0;
 	margin-bottom: 0;
 	right: 100px;
+	z-index: 0;
 }
 @keyframes fade-in {
 	from {opacity: 0; transform: scale(.7,.7)}
@@ -680,6 +682,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004ea9",endCo
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
+	z-index: 100;
+	position: relative;
 }
 @-webkit-keyframes slideInLeft {
 	0% {
@@ -711,10 +715,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004ea9",endCo
 	text-decoration: none;
 }
 .home h1{
-	color: #fff;
-	line-height: 60px;
+	color: #fff;	
 	font-weight: bold;
-	font-size: 52px;
+	font-size: 5rem;
 }
 .link-sosmed a{
 	display: inline-block;
@@ -904,10 +907,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004ea9",endCo
 	top:5px;
 	left:-31px;
 	background: rgb(0,78,169);
-background: -moz-linear-gradient(137deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 100%);
-background: -webkit-linear-gradient(137deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 100%);
-background: linear-gradient(137deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004ea9",endColorstr="#00a3e8",GradientType=1);
+	background: -moz-linear-gradient(137deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 100%);
+	background: -webkit-linear-gradient(137deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 100%);
+	background: linear-gradient(137deg, rgba(0,78,169,1) 0%, rgba(0,163,232,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004ea9",endColorstr="#00a3e8",GradientType=1);
 }
 .timeline i{
 	margin-left: -40px;
@@ -1340,7 +1343,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004ea9",endCo
 
 .snip1449 img {
 	width: 100%;
-	height: 251px;
 	border-radius: 5px;
 	vertical-align: top;
 	object-position: center;
@@ -1546,10 +1548,10 @@ a .icon-arrow {
 	#vertikal-text{
 		display: none;
 	}
-	.my-title{
+	.subtitle-header{
 		display: block;
 	}
-	.my-title h2{
+	.subtitle-header h2{
 		color: #fff;
 		font-size: 22px;
 		margin-top: 35px;
@@ -1703,10 +1705,10 @@ a .icon-arrow {
 	#vertikal-text{
 		display: none;
 	}
-	.my-title{
+	.subtitle-header{
 		display: block;
 	}
-	.my-title h2{
+	.subtitle-header h2{
 		color: #fff;
 		font-size: 22px;
 		margin-top: 35px;
@@ -1844,10 +1846,10 @@ a .icon-arrow {
 	#vertikal-text{
 		display: none;
 	}
-	.my-title{
+	.subtitle-header{
 		display: block;
 	}
-	.my-title h2{
+	.subtitle-header h2{
 		color: #fff;
 		font-size: 22px;
 		margin-top: 35px;
@@ -1965,6 +1967,8 @@ a .icon-arrow {
 
 }
 
-@media (min-width: 1800px) {
-
+@media (min-width: 1500px) {
+	.snip1556 img{
+		height: 550px;
+	}
 }
