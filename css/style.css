@@ -16,7 +16,6 @@ html{
 body{
 	font-family: 'Quicksand', sans-serif !important;
 	background-color: #111 !important;
-	overflow-x: hidden;
 }
 @-webkit-keyframes backgroundAnimate {
 	from {
@@ -133,8 +132,6 @@ body{
 	justify-content: center;
 	align-items: center;
 	position: fixed;
-	overflow-y: hidden;
-	z-index: 1;
 }
 .loading_page .box {
 	width: 400px;
