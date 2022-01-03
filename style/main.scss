@@ -1283,6 +1283,10 @@ body {
         background-color: transparent;
         box-shadow: none !important;
         padding: 30px 40px 0 0;
+
+        @media (max-width:767px) {
+            margin: 0;
+        }
     }
 
     .snip1556 *,
@@ -1301,6 +1305,10 @@ body {
         height: 500px;
         object-fit: cover;
         object-position: left;
+
+        @media (max-width:767px) {
+            height: auto;
+        }
     }
 
     .snip1556 figcaption {

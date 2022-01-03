@@ -2127,6 +2127,12 @@ body .modal-backdrop {
   padding: 30px 40px 0 0;
 }
 
+@media (max-width: 767px) {
+  .project_card .snip1556 {
+    margin: 0;
+  }
+}
+
 .project_card .snip1556 *,
 .project_card .snip1556 *:before {
   -webkit-box-sizing: border-box;
@@ -2146,6 +2152,12 @@ body .modal-backdrop {
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
+}
+
+@media (max-width: 767px) {
+  .project_card .snip1556 img {
+    height: auto;
+  }
 }
 
 .project_card .snip1556 figcaption {

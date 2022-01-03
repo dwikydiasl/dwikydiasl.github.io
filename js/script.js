@@ -1,6 +1,3 @@
-
-
-
 // Section
 var sections = $('section')
 , nav = $('nav')
