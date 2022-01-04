@@ -2359,7 +2359,7 @@ body .modal-backdrop {
   display: block;
 }
 
-.content_project .btn {
+.content_project .btn_tab {
   width: 100%;
   border: none;
   outline: none;
@@ -2367,20 +2367,21 @@ body .modal-backdrop {
   color: #fff;
   cursor: pointer;
   margin-right: 15px;
+  background-color: transparent;
 }
 
-.content_project .btn:last-child {
+.content_project .btn_tab:last-child {
   margin-right: 0;
 }
 
-.content_project .btn.actived {
+.content_project .btn_tab.actived {
   font-weight: 900;
   color: #004ea9;
   border-bottom: 2px solid #004ea9;
   border-radius: 0;
 }
 
-.content_project .btn:focus {
+.content_project .btn_tab:focus {
   -webkit-box-shadow: 0 0 !important;
           box-shadow: 0 0 !important;
 }

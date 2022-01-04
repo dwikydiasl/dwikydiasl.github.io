@@ -1492,7 +1492,7 @@ body {
     }
 
     /* Style the buttons */
-    .btn {
+    .btn_tab {
         width: 100%;
         border: none;
         outline: none;
@@ -1500,6 +1500,7 @@ body {
         color: $white;
         cursor: pointer;
         margin-right: 15px;
+        background-color: transparent;
 
         &:last-child {
             margin-right: 0;

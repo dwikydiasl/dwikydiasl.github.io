@@ -35,11 +35,11 @@
       <div class="content_project ">
         <h1 align="center" class="mb-5 title_section"> My All Project</h1>
         <div id="myBtnContainer">
-          <button class="btn actived" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('company')"> Company Profile</button>
-          <button class="btn" onclick="filterSelection('ecommerce')"> E-Commerce</button>
-          <button class="btn" onclick="filterSelection('education')"> Education</button>
-          <button class="btn" onclick="filterSelection('other')"> Other</button>
+          <button class="btn_tab actived" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn_tab" onclick="filterSelection('company')"> Company Profile</button>
+          <button class="btn_tab" onclick="filterSelection('ecommerce')"> E-Commerce</button>
+          <button class="btn_tab" onclick="filterSelection('education')"> Education</button>
+          <button class="btn_tab" onclick="filterSelection('other')"> Other</button>
         </div>
 
         <div class="listing_card">
@@ -269,10 +269,56 @@
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+  <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
   <!-- Custom JS -->
-  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/script.js" defer></script>
+<script>
+  
+// ========= Filter ============
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn_tab");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("actived");
+    current[0].className = current[0].className.replace(" actived", "");
+    this.className += " actived";
+  });
+}
+</script>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
