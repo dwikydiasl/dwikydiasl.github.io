@@ -689,6 +689,21 @@ p {
   color: #afafaf;
 }
 
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: #ccc;
+  position: fixed;
+  z-index: 998;
+  padding-left: 60px;
+}
+
+.progress-bar {
+  height: 3px;
+  background: #004ea9;
+  width: 0%;
+}
+
 body .modal {
   z-index: 9999;
 }
@@ -2133,14 +2148,6 @@ body .modal-backdrop {
   }
 }
 
-.project_card .snip1556 *,
-.project_card .snip1556 *:before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-}
-
 .project_card .snip1556 img {
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -2202,9 +2209,28 @@ body .modal-backdrop {
   right: 0;
 }
 
-.project_card .snip1556:hover figcaption,
-.project_card .snip1556.hover figcaption {
-  background-color: #004ea9;
+.project_card .snip1556 *,
+.project_card .snip1556 *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.project_card .col-sm-6:nth-child(1) .snip1556:hover figcaption {
+  background-color: #3DD5D6;
+}
+
+.project_card .col-sm-6:nth-child(2) .snip1556:hover figcaption {
+  background-color: #03C7F9;
+}
+
+.project_card .col-sm-6:nth-child(3) .snip1556:hover figcaption {
+  background-color: #107CBF;
+}
+
+.project_card .col-sm-6:nth-child(4) .snip1556:hover figcaption {
+  background-color: #2E456D;
 }
 
 .back_to_top {

@@ -18,6 +18,21 @@ p {
     color: #afafaf;
 }
 
+.progress-container {
+    width: 100%;
+    height: 3px;
+    background: #ccc;
+    position: fixed;
+    z-index: 998;
+    padding-left: 60px;
+}
+
+.progress-bar {
+    height: 3px;
+    background: $primary;
+    width: 0%;
+}
+
 body {
     .modal {
         z-index: 9999;
@@ -1287,6 +1302,61 @@ body {
         @media (max-width:767px) {
             margin: 0;
         }
+
+        img {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            max-width: 100%;
+            position: relative;
+            vertical-align: top;
+            height: 500px;
+            object-fit: cover;
+            object-position: left;
+
+            @media (max-width:767px) {
+                height: auto;
+            }
+        }
+
+        figcaption {
+            background-color: #333333;
+            bottom: 30px;
+            left: 40px;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            @media (min-width:1500px) {
+                right: 30px;
+            }
+        }
+
+        h3 {
+            font-size: 16px;
+            position: absolute;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            -webkit-transform-origin: 0% 0%;
+            -ms-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+            color: #fff;
+            left: 100%;
+            letter-spacing: 1px;
+            margin: 31px 0;
+            opacity: 0.8;
+            padding: 6px 40px 0 0;
+            right: 0;
+            text-transform: uppercase;
+            top: 0;
+            white-space: nowrap;
+        }
+
+        a {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
     }
 
     .snip1556 *,
@@ -1297,64 +1367,46 @@ body {
         transition: all 0.4s ease-out;
     }
 
-    .snip1556 img {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        max-width: 100%;
-        position: relative;
-        vertical-align: top;
-        height: 500px;
-        object-fit: cover;
-        object-position: left;
-
-        @media (max-width:767px) {
-            height: auto;
+    .col-sm-6 {
+        &:nth-child(1) {
+            .snip1556 {
+                &:hover {
+                    figcaption {
+                        background-color: #3DD5D6;
+                    }
+                }
+            }
         }
-    }
 
-    .snip1556 figcaption {
-        background-color: #333333;
-        bottom: 30px;
-        left: 40px;
-        position: absolute;
-        right: 0;
-        top: 0;
-
-        @media (min-width:1500px) {
-            right: 30px;
+        &:nth-child(2) {
+            .snip1556 {
+                &:hover {
+                    figcaption {
+                        background-color: #03C7F9;
+                    }
+                }
+            }
         }
-    }
 
-    .snip1556 h3 {
-        font-size: 16px;
-        position: absolute;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transform-origin: 0% 0%;
-        -ms-transform-origin: 0% 0%;
-        transform-origin: 0% 0%;
-        color: #fff;
-        left: 100%;
-        letter-spacing: 1px;
-        margin: 31px 0;
-        opacity: 0.8;
-        padding: 6px 40px 0 0;
-        right: 0;
-        text-transform: uppercase;
-        top: 0;
-        white-space: nowrap;
-    }
+        &:nth-child(3) {
+            .snip1556 {
+                &:hover {
+                    figcaption {
+                        background-color: #107CBF;
+                    }
+                }
+            }
+        }
 
-    .snip1556 a {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-
-    .snip1556:hover figcaption,
-    .snip1556.hover figcaption {
-        background-color: $primary;
+        &:nth-child(4) {
+            .snip1556 {
+                &:hover {
+                    figcaption {
+                        background-color: #2E456D;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1469,10 +1521,6 @@ body {
         position: relative;
         width: 33.3333%;
         padding: 20px;
-
-        &:last-child {
-            // padding-right: 0;
-        }
 
         @media (min-width:768px) and (max-width:1024px) {
             flex: 0 1 50%;
