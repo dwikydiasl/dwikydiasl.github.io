@@ -18,14 +18,14 @@
   <link href="assets/Fontawesome/css/brands.css" rel="stylesheet" />
   <link href="assets/Fontawesome/css/solid.css" rel="stylesheet" />
   <!-- Animated scroll -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <link href="assets/aos-2/dist/aos.css" rel="stylesheet">
 
 
   <title>Dwiky Dias Laksmana</title>
 </head>
 
-<body class="front_page">
-
+<body class="front_page" id="front_page" >
   <!-- Loading -->
   <div id="loading_page" class="loading_page">
     <img src="assets/img/loading5.gif" class="img_loading">
@@ -41,7 +41,7 @@
       </div>
 
     </div> -->
-    
+
   </div>
 
   <!-- landing page -->
@@ -321,52 +321,52 @@
             </p>
           </div>
           <div class="body_content">
-          
+
             <!-- Project card -->
-              <div class="project_card">
-            
-                <div class="row">
-                  <div class="col-12 col-sm-6 ">
-                    <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="50"  data-aos-duration="1000">
-                      <figcaption>
-                        <h3>E-Commerce</h3>
-                      </figcaption><img src="assets/img/stockshop.jpg" alt="sample103" />
-                      <a href="#"></a>
-                    </figure>
-                  </div>
-                  <div class="col-12 col-sm-6 ">
-                    <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="500"  data-aos-duration="1000">
-                      <figcaption>
-                        <h3>Education</h3>
-                      </figcaption><img src="assets/img/projek5.jpg" alt="sample103" />
-                      <a href="#"></a>
-                    </figure>
-                  </div>
-                  <div class="col-12 col-sm-6 ">
-                    <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="1000"  data-aos-duration="1000">
-                      <figcaption>
-                        <h3>Company Profil</h3>
-                      </figcaption><img src="assets/img/technolabs.png" alt="sample103" />
-                      <a href="#"></a>
-                    </figure>
-                  </div>
-                  <div class="col-12 col-sm-6 ">
-                    <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="1500"  data-aos-duration="1000">
-                      <figcaption>
-                        <h3>Company Profil</h3>
-                      </figcaption><img src="assets/img/projek7.jpg" alt="sample103" />
-                      <a href="#"></a>
-                    </figure>
-                  </div>
+            <div class="project_card">
+
+              <div class="row">
+                <div class="col-12 col-sm-6 ">
+                  <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="1000">
+                    <figcaption>
+                      <h3>E-Commerce</h3>
+                    </figcaption><img src="assets/img/stockshop.jpg" alt="sample103" />
+                    <a href="#"></a>
+                  </figure>
+                </div>
+                <div class="col-12 col-sm-6 ">
+                  <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="500" data-aos-duration="1000">
+                    <figcaption>
+                      <h3>Education</h3>
+                    </figcaption><img src="assets/img/projek5.jpg" alt="sample103" />
+                    <a href="#"></a>
+                  </figure>
+                </div>
+                <div class="col-12 col-sm-6 ">
+                  <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="1000" data-aos-duration="1000">
+                    <figcaption>
+                      <h3>Company Profil</h3>
+                    </figcaption><img src="assets/img/technolabs.png" alt="sample103" />
+                    <a href="#"></a>
+                  </figure>
+                </div>
+                <div class="col-12 col-sm-6 ">
+                  <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="1500" data-aos-duration="1000">
+                    <figcaption>
+                      <h3>Company Profil</h3>
+                    </figcaption><img src="assets/img/projek7.jpg" alt="sample103" />
+                    <a href="#"></a>
+                  </figure>
                 </div>
               </div>
-          </div>  
-          
+            </div>
+          </div>
+
           <div class="view_all_project">
             <a href="project.html" class="brk-btn">
               View all project
             </a>
-          </div>       
+          </div>
 
         </div>
       </div>
@@ -386,7 +386,7 @@
             </p>
 
           </div>
-          <div class="body_content" data-aos="flip-left"   data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+          <div class="body_content" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <h4><i class="fa-solid fa-envelope-open-text"></i> E-Mail: </h3><br>
               <h5>
                 diaslaksmana<i class="fa-solid fa-at"></i>gamil.com
@@ -467,17 +467,17 @@
         </div>
       </div>
       <h6 class="text-footer">
-        Copyright ©  <script type="text/javascript">
+        Copyright © <script type="text/javascript">
           document.write(new Date().getFullYear());
         </script>
-        <span> Dwiky Dias Laksmana</span> . All rights reserved 
+        <span> Dwiky Dias Laksmana</span> . All rights reserved
       </h6>
     </section>
 
     <div class="back_to_top">
       <a href="#">
-        <i class="fa-solid fa-hand-point-up"></i>
-      </a>      
+        <i class="fa-solid fa-circle-arrow-up"></i>
+      </a>
     </div>
 
   </div>
@@ -489,33 +489,41 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-  <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <script src="assets/aos-2/dist/aos.js"></script>
+  <script>
+    $(window).on("load", function () {
+	AOS.init();
+});
+
+  </script>
   <!-- Custom JS -->
   <script type="text/javascript" src="js/script.js" defer></script>
-<script>
-//loading page
-function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 6000);
-    function checkReady() {
+  <script>
+    //loading page
+    function onReady(callback) {
+      var intervalID = window.setInterval(checkReady, 6000);
+
+      function checkReady() {
         if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
+          window.clearInterval(intervalID);
+          callback.call(this);
         }
+      }
     }
-}
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-onReady(function () {
-    show('header', true);
-    show('landing-page', true);
-    show('loading_page', false);
-});
-</script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
+    function show(id, value) {
+      document.getElementById(id).style.display = value ? 'block' : 'none';
+    }
+    onReady(function () {
+      show('header', true);
+      show('landing-page', true);
+      show('loading_page', false);
+    });
+  </script>
+
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--

@@ -33,7 +33,13 @@ p {
     width: 0%;
 }
 
+.front_page {
+    cursor: url(/assets/img/hand-point-up-solid.svg), auto;
+}
+
+
 body {
+
     .modal {
         z-index: 9999;
 
@@ -1483,21 +1489,16 @@ body {
 
 //back to top
 .back_to_top {
-    width: 50px;
-    height: 50px;
     border-radius: 100px;
     position: fixed;
     z-index: 999;
-    background: $white;
     bottom: 30px;
     right: 5%;
     opacity: 0;
 
     i {
-        color: $black;
-        color: #010101;
-        font-size: 28px;
-        padding: 11px 13px;
+        color: $white;
+        font-size: 52px;
     }
 }
 

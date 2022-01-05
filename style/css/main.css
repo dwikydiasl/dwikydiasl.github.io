@@ -706,6 +706,10 @@ p {
   width: 0%;
 }
 
+.front_page {
+  cursor: url(/assets/img/hand-point-up-solid.svg), auto;
+}
+
 body .modal {
   z-index: 9999;
 }
@@ -2304,22 +2308,17 @@ body .modal-backdrop {
 }
 
 .back_to_top {
-  width: 50px;
-  height: 50px;
   border-radius: 100px;
   position: fixed;
   z-index: 999;
-  background: #fff;
   bottom: 30px;
   right: 5%;
   opacity: 0;
 }
 
 .back_to_top i {
-  color: #010101;
-  color: #010101;
-  font-size: 28px;
-  padding: 11px 13px;
+  color: #fff;
+  font-size: 52px;
 }
 
 .scrolled .back_to_top {
