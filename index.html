@@ -17,6 +17,9 @@
   <link href="assets/Fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="assets/Fontawesome/css/brands.css" rel="stylesheet" />
   <link href="assets/Fontawesome/css/solid.css" rel="stylesheet" />
+  <!-- Animated scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
   <title>Dwiky Dias Laksmana</title>
 </head>
@@ -112,7 +115,7 @@
     <section id="about" class="about section_layout">
       <div class="container">
         <div class="content">
-          <div class="header_content">
+          <div class="header_content" data-aos="fade-up-right">
             <h1 class="title_section">
               About me
             </h1>
@@ -121,7 +124,7 @@
               a front-end developer also work freelance as a front-end developer and web design.
             </p>
           </div>
-          <div class="body_content">
+          <div class="body_content" data-aos="fade-up-right">
             <h4> <i class="fas fa-building"></i> Work Experience</h4>
             <p>
               Currently, I working at <a href="" target="blank"> Software seni </a> as Front-end Developer. I am
@@ -130,7 +133,7 @@
 
             </p>
           </div>
-          <div class="social">
+          <div class="social" data-aos="fade-up-right">
             <h4>Follow me:</h4>
             <ul>
               <li>
@@ -308,7 +311,7 @@
     <section id="projects" class="projects section_layout">
       <div class="container">
         <div class="content">
-          <div class="header_content">
+          <div class="header_content" data-aos="fade-down-right">
             <h1 class="title_section">
               My Project
             </h1>
@@ -324,7 +327,7 @@
             
                 <div class="row">
                   <div class="col-12 col-sm-6 ">
-                    <figure class="snip1556">
+                    <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="50"  data-aos-duration="1000">
                       <figcaption>
                         <h3>E-Commerce</h3>
                       </figcaption><img src="assets/img/stockshop.jpg" alt="sample103" />
@@ -332,7 +335,7 @@
                     </figure>
                   </div>
                   <div class="col-12 col-sm-6 ">
-                    <figure class="snip1556">
+                    <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="500"  data-aos-duration="1000">
                       <figcaption>
                         <h3>Education</h3>
                       </figcaption><img src="assets/img/projek5.jpg" alt="sample103" />
@@ -340,7 +343,7 @@
                     </figure>
                   </div>
                   <div class="col-12 col-sm-6 ">
-                    <figure class="snip1556">
+                    <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="1000"  data-aos-duration="1000">
                       <figcaption>
                         <h3>Company Profil</h3>
                       </figcaption><img src="assets/img/technolabs.png" alt="sample103" />
@@ -348,7 +351,7 @@
                     </figure>
                   </div>
                   <div class="col-12 col-sm-6 ">
-                    <figure class="snip1556">
+                    <figure class="snip1556" data-aos="fade-down-right" data-aos-delay="1500"  data-aos-duration="1000">
                       <figcaption>
                         <h3>Company Profil</h3>
                       </figcaption><img src="assets/img/projek7.jpg" alt="sample103" />
@@ -372,7 +375,7 @@
     <section id="contact" class="contact section_layout">
       <div class="container">
         <div class="content">
-          <div class="header_content">
+          <div class="header_content" data-aos="zoom-in-down">
             <h1 class="title_section">
               Contact me
             </h1>
@@ -383,7 +386,7 @@
             </p>
 
           </div>
-          <div class="body_content">
+          <div class="body_content" data-aos="flip-left"   data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <h4><i class="fa-solid fa-envelope-open-text"></i> E-Mail: </h3><br>
               <h5>
                 diaslaksmana<i class="fa-solid fa-at"></i>gamil.com
@@ -509,6 +512,11 @@ onReady(function () {
     show('loading_page', false);
 });
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
