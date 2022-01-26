@@ -1765,6 +1765,7 @@ body .content_project {
 #header.header .nav .nav-left a img {
   max-width: 65px;
   z-index: 999;
+  max-height: 100px;
 }
 #header.header .nav .nav-left a span {
   font-size: 3rem;
