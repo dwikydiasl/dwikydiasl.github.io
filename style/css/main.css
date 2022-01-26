@@ -1435,6 +1435,7 @@ body .content_project {
   font-size: 1.7rem;
   padding-left: 20px;
   position: relative;
+  font-style: italic;
 }
 @media (max-width: 600px) {
   .section_layout .subtitle_section {
