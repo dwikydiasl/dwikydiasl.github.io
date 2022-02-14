@@ -1,3 +1,5 @@
+'use strict';
+
 // Section
 var sections = $('section')
 , nav = $('nav')
@@ -113,8 +115,6 @@ var Snow = {
 };
 
 var confetti = Snow.init();
-
-
 var animateButton = function(e) {
 
   e.preventDefault;

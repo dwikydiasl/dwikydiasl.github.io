@@ -43,28 +43,28 @@
             }
         }
     }
-}
 
-.img_footer_content {
-    img {
-        position: absolute;
-        right: 5%;
-        bottom: 0;
-        max-width: 60%;
-    }
-
-    svg {
-        position: absolute;
-        right: 5%;
-        bottom: 0;
-
-        @media (max-width:600px) {
+    .img_footer_content {
+        img {
             position: absolute;
-            width: 100%;
-            right: 0;
-            left: 50%;
-            transform: translate(-50%, 0);
-            bottom: -20%;
+            right: 5%;
+            bottom: 0;
+            max-width: 60%;
+        }
+
+        svg {
+            position: absolute;
+            right: 5%;
+            bottom: 0;
+
+            @media (max-width:600px) {
+                position: absolute;
+                width: 100%;
+                right: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+                bottom: -20%;
+            }
         }
     }
 }
